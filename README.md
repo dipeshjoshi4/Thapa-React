@@ -50,3 +50,36 @@ function MyComponenents(name){
 - rich ecosystem-npm packages
 - component based architecture
 - Declarative approach
+
+### installation
+
+- 4 way we can create REACT.js project
+1. Custom
+2. create-react-app
+3. Vite
+4. Meta Frameworks(Next.js,Remix,Gatsby,etc.)
+
+- then go to vite website where you will see 4 package manger you have to installed  one of them
+
+- for using bun first write 
+
+1. bun and hit enter => you see lots of bun information
+
+2. npm i bun
+
+3. bun create vite => install this
+
+4. they asked project name so give project name
+
+5. react choose
+
+6. javascript
+
+7. cd project name
+
+8. npm install 
+- if you use bun then write => bun install 
+
+9. npm run dev OR 
+
+10. bun dev
