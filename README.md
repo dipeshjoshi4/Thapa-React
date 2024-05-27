@@ -32,7 +32,7 @@ function MyComponenents(name){
 
 ```
 
-### how React Works?
+### 2 how React Works?
 
 - Component -----------more time used it became-----------> Instances ---------babel convert--------> React element(virtual dom)--->DOM Element---> Final UI
 
@@ -83,3 +83,54 @@ function MyComponenents(name){
 9. npm run dev OR 
 
 10. bun dev
+
+- now if version 19 in rc means => release catogary not properly launch so you have to do this expre step
+
+- go to package.json => empty the dependcies 
+
+```
+ "dependencies": {
+  },
+
+```
+- now in terminal do this one by one
+
+1. bun install react@rc
+2. bun install react-dom@rc
+
+- no see package.json you see
+
+```
+  "dependencies": {
+    "react": "^19.0.0-rc-935180c7e0-20240524",
+    "react-dom": "^19.0.0-rc-935180c7e0-20240524"
+  },
+
+```
+
+### 2.1 Fixing React Installation Issue & Bun, npm, and pnpm Setup
+
+- with bun 
+0. npm i -g bun
+1. bun create vite
+2. project-name
+3. select react
+4. select js
+5. cd project-name
+6. npm install => you use bun so => bun install
+7. npm run dev => you use bun so => bun run dev or bun dev => use anyone
+
+- with help of npm
+0. node -v => check node version
+1. npm -v => with node installation this npm package bydefault have so to check npm
+2. npm create vite@latest
+3. select react
+4. select js
+5. cd project-name
+6. npm i 
+7. npm run dev
+
+- with help of pnpm
+0. npm i -g pnpm
+1. pnpm -v
+- same as bun 
