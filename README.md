@@ -152,3 +152,32 @@ function MyComponenents(name){
 
 7. package.json => all details & configuration  of your projects libraries,versions and script & dependecy
 
+### 5.jsx in depth (javscript xml) 
+
+- browser dont understand react
+
+- with jsx you can write html code in js and place them in the DOM without any createElement() and appendchild() methods
+
+- React.createElement => just write this and BEHIND THE SCENE REACT AUTOMATICALLY UPDATE without writing createlement()
+
+- WITHOUT AUTTO CORRECTED REACT
+
+```
+export const App = () => {
+  return <h1> Hello World!</h1>;
+};
+
+```
+
+
+- writing pure react this => <h1> Hello World! </h1>
+
+- React.createElement(input tag  || properties(attributes in Html) || child)
+
+- React.createElement('h1',null,"Hello World!")
+
+```
+export const App = () => {
+  return React.createElement("h1",null,"Hello World")
+}
+```
