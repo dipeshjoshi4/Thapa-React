@@ -134,3 +134,21 @@ function MyComponenents(name){
 0. npm i -g pnpm
 1. pnpm -v
 - same as bun 
+
+### 4. file name and folder structure
+
+1. node_modules => all the necessary libaries and dependencies by react.js
+2. public folder => all the static files like images and videos and fonts
+3. src folder => containe the source file imp file(react components files ,jsx and css file)  
+
+- App.jsx -> where you create structure of components
+- Main.jsx -> which is import in main jsx
+
+4. Index.html => from where the root element select by dom and main .jsx
+
+5. eslintrc.cjs => show js syntax as per rule
+
+6. .gitignore => git push na hone wali file jo github main nahi jaayegi node_modules nahi jatte github because of heavy load of dependency
+
+7. package.json => all details & configuration  of your projects libraries,versions and script & dependecy
+
