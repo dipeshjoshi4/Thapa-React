@@ -181,3 +181,7 @@ export const App = () => {
   return React.createElement("h1",null,"Hello World")
 }
 ```
+
+- so this React.creatElement is converted into React.Elements which is object and thats show what is render in 
+
+- babel is compiler which conver react(jsx) code into valid js
