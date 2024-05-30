@@ -185,3 +185,18 @@ export const App = () => {
 - so this React.creatElement is converted into React.Elements which is object and thats show what is render in 
 
 - babel is compiler which conver react(jsx) code into valid js
+
+
+### 6.Components in React
+
+- components is js function which have jsx (html like code you can write js is called jsx)
+
+- components is building block of react.allowing complex and interactive App
+
+- always have .jsx extension in components
+
+- two ways to create components
+
+1. Class Components - before the function components class componenets is the way to create components
+
+2. Function Components - this is morden and most recommended way of writing react.js components 
