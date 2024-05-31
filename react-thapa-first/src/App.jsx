@@ -1,12 +1,12 @@
 export const App = () => {
   return (
-    <div>
+    <>
       <NetflixSeries />
       <NetflixSeries />
       <NetflixSeries />
       <NetflixSeries />
       <NetflixSeries />
-    </div>
+    </>
   )
 };
 
