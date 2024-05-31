@@ -200,3 +200,19 @@ export const App = () => {
 1. Class Components - before the function components class componenets is the way to create components
 
 2. Function Components - this is morden and most recommended way of writing react.js components 
+
+### 7. React Fragments
+
+- WHY WE NEED REACT FRAGMENTS?
+
+- so whenever we write components . we have to add seprate parent div for the jsx element and that seprate and unuse parent div 
+- will add extra node for remove that extra node we can add <React.fragment></React.fragment> OR <fragment></fragment> OR <></>
+- the third and very unpopular option is you you can write componments in array like form 
+return([
+  <NetflixSeries key="1"/>,<NetflixSeries key="2"/>
+  ])
+
+- WHY CANT WE ADD MULTIPLE ELEMENT SAME TIME ?
+
+- as after jsx compiled and coverted into js object and you cant add multiple js object at same time
+- return (jsx(---),jsx(---))
