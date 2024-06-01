@@ -242,7 +242,6 @@ function MyComponent(){
 
 <details>
 ```
-
 const NetflixSeries = () => {
   return (
     <div>
@@ -281,7 +280,7 @@ const NetflixSeries = () => {
   return (
     <div>
       <div>
-        <img src="qot.jpg" alt="qot.jpg" width="60%" height="60%" />
+        <img src="qot.jpg"  width="60%" height="60%" />
       </div>
 
       <div>
