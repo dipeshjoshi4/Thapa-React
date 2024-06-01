@@ -246,7 +246,7 @@ const NetflixSeries = () => {
   return (
     <div>
       <div>
-        <img src="qot.jpg" alt="qot.jpg" width="60%" height="60%" />
+        <img src=""  width="60%" height="60%" />
       </div>
       <div>
         <h2>Name:Queen of Tears</h2>
@@ -276,7 +276,7 @@ const NetflixSeries = () => {
   return (
     <div>
       <div>
-        <img src="qot.jpg"  width="60%" height="60%" />
+        <img src=""  width="60%" height="60%" />
       </div>
 
       <div>
