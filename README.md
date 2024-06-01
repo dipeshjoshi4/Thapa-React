@@ -216,3 +216,19 @@ return([
 
 - as after jsx compiled and coverted into js object and you cant add multiple js object at same time
 - return (jsx(---),jsx(---))
+
+### 8.Dynamic Values in JSX:Injectinh Javascript into HTML
+
+- you can add any varible of your component in jsx using {}
+
+- Example:
+```
+function MyComponent(){
+  const value = "Hey";
+  return <p>{value}</p>;
+}
+
+```
+- jsx allows you to write js expressions inside curly bracket include operations,function calls and other Js Expression produce a value
+
+- return <div> The Result is : {1+2+3}</div>
