@@ -240,6 +240,9 @@ function MyComponent(){
 
 - Before Dynamic value NetflixSeries Component
 
+- CODE:
+
+
 <details>
 
 ``````
@@ -264,6 +267,8 @@ const NetflixSeries = () => {
 </details>
 
 - After Dynamic value NetflixSeries Component
+
+- CODE:
 
 <details>
 
