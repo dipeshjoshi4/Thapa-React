@@ -264,6 +264,7 @@ const NetflixSeries = () => {
 - After Dynamic value NetflixSeries Component
 
 <details>
+
 ```
 const NetflixSeries = () => {
   const name = "Queen"
@@ -272,13 +273,11 @@ const NetflixSeries = () => {
     const Genre = "RomCom";
     return Genre
   }
-
   return (
     <div>
       <div>
         <img src=""  width="60%" height="60%" />
       </div>
-
       <div>
         <h2>Name:{name}</h2>
         <h3>Rating:{5 + 4}</h3>
