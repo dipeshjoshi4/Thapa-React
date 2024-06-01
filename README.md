@@ -241,7 +241,8 @@ function MyComponent(){
 - Before Dynamic value NetflixSeries Component
 
 <details>
-```
+
+``````
 const NetflixSeries = () => {
   return (
     <div>
@@ -258,14 +259,15 @@ const NetflixSeries = () => {
   )
 }
 
-```
+``````
+
 </details>
 
 - After Dynamic value NetflixSeries Component
 
 <details>
 
-```
+``````
 const NetflixSeries = () => {
   const name = "Queen"
   const summary = "The queen of department stores and her small-town husband weather a marital crisis —until love miraculously begins to bloom again."
@@ -288,5 +290,5 @@ const NetflixSeries = () => {
   )
 }
 
-```
+``````
 </details>
