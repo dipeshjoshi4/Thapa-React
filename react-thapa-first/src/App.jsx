@@ -11,6 +11,13 @@ export const App = () => {
 };
 
 const NetflixSeries = () => {
+  const name = "Queen"
+  const summary = "The queen of department stores and her small-town husband weather a marital crisis —until love miraculously begins to bloom again."
+  const returnGenre = () => {
+    const Genre = "RomCom";
+    return Genre
+  }
+
   return (
     <div>
       <div>
@@ -18,9 +25,10 @@ const NetflixSeries = () => {
       </div>
 
       <div>
-        <h2>Name:Queen Of Tears</h2>
-        <h3>Rating:8.2</h3>
-        <p>The queen of department stores and her small-town husband weather a marital crisis —until love miraculously begins to bloom again.</p>
+        <h2>Name:{name}</h2>
+        <h3>Rating:{5 + 4}</h3>
+        <p>{summary}</p>
+        <h4>Genre:{ returnGenre()}</h4>
       </div>
     </div>
   )

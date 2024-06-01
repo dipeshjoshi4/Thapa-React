@@ -232,3 +232,67 @@ function MyComponent(){
 - jsx allows you to write js expressions inside curly bracket include operations,function calls and other Js Expression produce a value
 
 - return <div> The Result is : {1+2+3}</div>
+
+- With Culry Bracket we chnage dynamacilly 3 main thing 
+- 1. Varibles
+- 2. Expressions
+- 3. Function Calls
+
+- Before Dynamic value NetflixSeries Component
+
+<details>
+```
+
+const NetflixSeries = () => {
+  return (
+    <div>
+
+      <div>
+        <img src="qot.jpg" alt="qot.jpg" width="60%" height="60%" />
+      </div>
+
+      <div>
+        <h2>Name:Queen of Tears</h2>
+        <h3>Rating:8.2</h3>
+        <p>The queen of department stores and her small-town husband weather a marital crisis —until love miraculously begins to bloom again.</p>
+        <h4>Genre:Thriller</h4>
+      </div>
+
+    </div>
+  )
+}
+
+
+```
+</details>
+
+- After Dynamic value NetflixSeries Component
+
+<details>
+```
+const NetflixSeries = () => {
+  const name = "Queen"
+  const summary = "The queen of department stores and her small-town husband weather a marital crisis —until love miraculously begins to bloom again."
+  const returnGenre = () => {
+    const Genre = "RomCom";
+    return Genre
+  }
+
+  return (
+    <div>
+      <div>
+        <img src="qot.jpg" alt="qot.jpg" width="60%" height="60%" />
+      </div>
+
+      <div>
+        <h2>Name:{name}</h2>
+        <h3>Rating:{5 + 4}</h3>
+        <p>{summary}</p>
+        <h4>Genre:{ returnGenre()}</h4>
+      </div>
+    </div>
+  )
+}
+
+```
+</details>
