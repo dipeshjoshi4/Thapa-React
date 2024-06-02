@@ -14,7 +14,7 @@ const NetflixSeries = () => {
   const name = "Queen"
   const summary = "The queen of department stores and her small-town husband weather a marital crisis —until love miraculously begins to bloom again."
   const returnGenre = () => {
-    const Genre = "RomCom";
+    const Genre = "RomComG";
     return Genre
   }
 
