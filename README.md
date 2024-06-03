@@ -364,4 +364,37 @@ const NetflixSeries = () => {
         <button>{age >= 18 ? "Watch Now" : "Not Availble"}</button>
 
 ```
- 
+
+- 3. Sometimes you might have very complex if conditions, for that there are some solutions
+
+```
+let canWatch = "Not Availble"
+if(age >= 18) canWatch = "Watch Now"
+
+
+return(
+  <div>
+        <button>{can Watch}</button>
+  <div>
+)
+
+```
+
+- 4. solitoon can be better as it prevernts cluttering of variables outside and encapsulates such logic inside a function
+
+- one another benefit ia also that,you can also pass some dynamic values as functions parameter
+
+```
+const canWatch =() => {
+      if(age >= 18) return "Watch Now";
+      return "Not Avilable"
+};
+
+return(
+  <div>
+        <button>{can Watch()}</button>
+  <div>
+)
+
+```
+
