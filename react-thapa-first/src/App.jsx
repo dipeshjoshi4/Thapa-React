@@ -12,7 +12,8 @@ export const App = () => {
 
 const NetflixSeries = () => {
   const name = "Queen"
-  const summary = "The queen of department stores and her small-town husband weather a marital crisis —until love miraculously begins to bloom again."
+  let age = 17
+  const summary = "The queen of department stores and her small-town husband weather a marital crisis —until love miraculously begins to bloom."
   const returnGenre = () => {
     const Genre = "RomComG";
     return Genre
@@ -28,7 +29,8 @@ const NetflixSeries = () => {
         <h2>Name:{name}</h2>
         <h3>Rating:{5 + 4}</h3>
         <p>{summary}</p>
-        <h4>Genre:{ returnGenre()}</h4>
+        <h4>Genre:{returnGenre()}</h4>
+        <button>{age >= 18 ? "Watch Now" : "Not Availble"}</button>
       </div>
     </div>
   )
