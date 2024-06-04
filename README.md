@@ -398,3 +398,67 @@ return(
 
 ```
 
+### 10. react question interview-1
+
+- file saved on interview question is
+1. Practices.jsx
+2. source.md
+### EXPLAIN
+- react does not render 'false', 'null','undefined' or 'NaN' in the DOM.these values,when used in JSX,will result in nothing being displayed
+- however,'0' and empty strings (`""`) are exceptions:
+- **`0`** is rendered in the DOM because it is consideread a  valid react node.this means that if `0` is the result------------expression,it will appear in your UI
+- **empty strings**(`""`) are also considered valid----------- and are renderead as well
+### CODE
+```
+export const Practices = () => {
+    const students = []
+    return (
+        <>
+
+            {/* 1st solution */}
+            {/* <p>{students.length === 0 && "No Students Found"}</p> */}
+
+
+            {/* 2nd  solution */}
+            {/* const students = [1] */}
+
+            {/* 3rd solution */}
+            {/* <p>{!students.length  && "No Students Found"}</p> */}
+
+            {/* 4th solution */}
+            {/* <p>{!Boolean(students.length)  && "No Students Found"}</p> */}
+
+            <p>{students.length && "No Students Found"}</p>
+            <p>Number Of Students : {students.length}</p>
+        </>
+    );
+};
+
+
+```
+
+### 11. React Import and Export 
+
+- 1. Default Export and Import
+
+- Default Export : A file can have only one default Export
+- Default Import : when  importing  a default  export,  you can name the import the same name 
+
+- make components folder add on ecomponenet and then write command
+```
+export default NetflixSeries
+
+```
+in App.jsx first line write command
+
+```
+import NetflixSeries from "./components/NetflixSeries"
+
+```
+
+
+- 2. Named Export and Import
+- 3. Mixed Export and Import
+
+
+
