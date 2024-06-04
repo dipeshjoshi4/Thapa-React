@@ -1,5 +1,5 @@
 
-import NetflixSeries from "./components/NetflixSeries"
+import { NetflixSeries, Footer } from "./components/NetflixSeries"
 
 
 export const App = () => {
@@ -10,6 +10,7 @@ export const App = () => {
       <NetflixSeries />
       <NetflixSeries />
       <NetflixSeries />
+      <Footer />
     </>
   )
 };

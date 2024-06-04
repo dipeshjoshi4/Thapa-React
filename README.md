@@ -456,9 +456,42 @@ import NetflixSeries from "./components/NetflixSeries"
 
 ```
 
-
 - 2. Named Export and Import
-- 3. Mixed Export and Import
+
+- for the export we have to write export before the function
+```
+export const NetflixSeries = () =>{
+}
+```
+- for the  import in App.jsx  we have to write import with {component name} 
+
+```
+import {NetflixSeries} from "./components/NetflixSeries"
+
+```
+- Named Export : a file can have multiple named exports. each named exports  must be explicitly exported
+
+- Named Import: when importing named exports, the import names must be ,match the export names exactly.
+
+- Named imports must be enclosed in curly braces 
+
+- you can import and export multiple componenet like this
+````
+- EXPORT IN NetflixSeries.jsx
+export const NetflixSeries = () => { }
+export const Footer = () => { }
+
+- IMPORT IN App.jsx
+import { NetflixSeries, Footer } from "./components/NetflixSeries"
+
+```
+
+- 3. Combined(Mixed) Export and Import
+
+- both above method u can use  in mixed
+
+- default export never be write in {} while import
+- named export always write in {} while import
 
 
 

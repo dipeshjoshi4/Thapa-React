@@ -1,4 +1,4 @@
-const NetflixSeries = () => {
+export const NetflixSeries = () => {
     const name = "Queen"
     const summary = "The queen of department stores and her small-town husband weather a marital crisis —until love miraculously begins to bloom."
     const returnGenre = () => {
@@ -29,4 +29,10 @@ const NetflixSeries = () => {
     )
 }
 
-export default NetflixSeries;
+export const Footer = () => {
+    return (
+        <>
+            <h1>Copyrighr@d1</h1>
+        </>
+    )
+}
