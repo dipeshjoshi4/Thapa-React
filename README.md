@@ -476,7 +476,8 @@ import {NetflixSeries} from "./components/NetflixSeries"
 - Named imports must be enclosed in curly braces 
 
 - you can import and export multiple componenet like this
-````
+
+```
 - EXPORT IN NetflixSeries.jsx
 export const NetflixSeries = () => { }
 export const Footer = () => { }
@@ -493,5 +494,8 @@ import { NetflixSeries, Footer } from "./components/NetflixSeries"
 - default export never be write in {} while import
 - named export always write in {} while import
 
+### 12. Looping iN JSX
+
+- NOT FOR LOOP USE THE MAP
 
 
