@@ -8,7 +8,7 @@ const NetflixSeries = () => {
                 seriesData.map((curElem) => {
                     return (
                         <li key={curElem.id}>
-                            <div><img src={curElem.img_url} alt="qot.jpg" width="60%" height="60%" /></div>
+                            <div><img src={curElem.img_url} alt={curElem.name} width="60%" height="60%" /></div>
 
                             <div>
                                 <h2>Name:{curElem.name}</h2>
