@@ -496,6 +496,24 @@ import { NetflixSeries, Footer } from "./components/NetflixSeries"
 
 ### 12. Looping iN JSX
 
-- NOT FOR LOOP USE THE MAP
+- NOT FOR LOOP in jSX USE THE MAP
+- .map()
 
+- Example :
 
+```
+return(
+  <ul>
+  {students.map((student)=>(
+      <li key={student}>{student}</li>
+  ))}
+  </ul>
+);
+
+```
+
+- React.js will complain if you dont pass key prop to <li>
+ 
+- react.js uses keys to differentiate each elements so that it can remove or edit correct element when a students gets added or removed dont worry we will talk further in detail.
+
+- we can use arrays in jsx too. so here stduent.map return array jsx rendered on the page
