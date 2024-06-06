@@ -520,3 +520,12 @@ return(
 
 ### 13.Props in React JS - Making Netflix Cards Reusable
 
+- React Props(properties) facilitate data transfer from parent to child components
+
+- Data flows unidirectionally,ensuring a clear direction of information in React applications.
+
+- Props are immutable.meaning child components can not modify the data recevied from parents
+
+- child components access props through their function parameter
+
+- You can also pass JSX  as props to another component
