@@ -517,3 +517,6 @@ return(
 - react.js uses keys to differentiate each elements so that it can remove or edit correct element when a students gets added or removed dont worry we will talk further in detail.
 
 - we can use arrays in jsx too. so here stduent.map return array jsx rendered on the page
+
+### 13.Props in React JS - Making Netflix Cards Reusable
+
