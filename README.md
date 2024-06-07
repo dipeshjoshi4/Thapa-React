@@ -529,3 +529,39 @@ return(
 - child components access props through their function parameter
 
 - You can also pass JSX  as props to another component
+
+- we have loop with map and because of that our new new card will fetch from json data
+
+- if we say we have app component which include NetflixSeries components => App.jsx > Netflixseries.jsx
+- same way we have Netflixseries component which have SeriesCard Components => Netflixseries.jsx > SeriesCard.jsx
+
+- so the direction is like that App.jsx > NetflixSeries.jsx(WHO PASS THE PROPS) > SeriesCard.jsx(who recevied the props) 
+
+- how props passed => 
+```
+seriesData.map((curElem) => (<SeriesCard key={curElem.id} curElem={curElem} />))
+```
+
+- how props recevied =>
+```
+export const SeriesCard = (props) => {
+    return (
+        <li>
+            <div>
+                <img src={props.curElem.img_url} alt={props.curElem.name} width="60%" height="60%" />
+            </div>
+
+            <div>
+                <h2>Name:{props.curElem.name}</h2>
+                <h3>Rating:{props.curElem.rating}</h3>
+                <p>{props.curElem.description}</p>
+                <h4>Genre:{props.curElem.genre}</h4>
+                <p>Cast:{props.curElem.cast}</p>
+                <a href={props.curElem.watch_url} target="_blank">
+                    <button>Watch Now</button>
+                </a>
+            </div>
+        </li>
+    )
+}
+```           
