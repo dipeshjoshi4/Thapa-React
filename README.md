@@ -565,3 +565,16 @@ export const SeriesCard = (props) => {
     )
 }
 ```           
+
+### 14.  React Destructuring Props in JSX 
+
+- so you can destrcture anyting in jsx .whateevr the props are its a object
+
+- first when props pass we can give name currElem={currElem} => data={currElem}
+
+
+export const SeriesCard = ({data}) => {
+const { id, img_url, name, rating, description, cast, genre, watch_url } = data;
+    return (
+
+    )}
