@@ -578,3 +578,5 @@ const { id, img_url, name, rating, description, cast, genre, watch_url } = data;
     return (
 
     )}
+
+### 15.React Practise Challange
