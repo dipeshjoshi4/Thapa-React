@@ -671,3 +671,11 @@ function ProfileCard({ name, age, greeting, children }) {
 }
 
 ```
+
+### 16.Add CSS Styling in React: Class vs. ClassName
+
+- two bydefault CSS files 
+
+1. App.css ->
+
+2. index.css -> 

@@ -1,13 +1,15 @@
 
-// import NetflixSeries from "./components/NetflixSeries";
-import Profile from "./components/Profile";
+import NetflixSeries from "./components/NetflixSeries";
+// import Profile from "./components/Profile";
+import "./components/Netflix.css"
 
 export const App = () => {
   return (
-    <>
-      {/* <NetflixSeries /> */}
-      <Profile/>
-    </>
+    <section className="container">
+      <h1 className="card-heading">List Of Best Netflix Series</h1>
+      <NetflixSeries />
+      {/* <Profile/> */}
+    </section>
   )
 };
 
