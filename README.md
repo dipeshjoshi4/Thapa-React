@@ -579,4 +579,4 @@ const { id, img_url, name, rating, description, cast, genre, watch_url } = data;
 
     )}
 
-### 15.React Practise Challange
+### 15.React Practise Challange-1-Passing JSX as Props 
