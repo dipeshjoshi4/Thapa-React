@@ -580,3 +580,94 @@ const { id, img_url, name, rating, description, cast, genre, watch_url } = data;
     )}
 
 ### 15.React Practise Challange-1-Passing JSX as Props 
+
+- there are 3 way you can add props (iressepective of jsx as props)
+
+- Question
+
+```
+import React from 'react';
+
+function Profile() {
+    return (
+        <div>
+            <h1>Profile Card Challange</h1>
+            <ProfileCard
+                name="Alice"
+                age={30}
+                greeting={
+                    <div>
+                        <strong>Hi Alice,have a Wonderful day!</strong>
+                    </div>
+                }>
+                <p>Hobbies:Hiking,Reading</p>
+                <button>Contact</button>
+            </ProfileCard>
+
+            <ProfileCard
+                name="Bob"
+                age={25}
+                greeting={
+                    <div>
+                        <strong>Hello Bob, Keep up the great work</strong>
+                    </div>
+                }
+            >
+                <p>Hobbies:Gaming,Cooking</p>
+                <button>Contact</button>
+            </ProfileCard>
+        </div>
+    )
+}
+
+
+```
+
+### 1.
+
+- here you see props.children is property where you can add two tag bettween jsx also shown in UI with help of props 
+
+```
+function ProfileCard(props) {
+    return (
+        <>
+            <h2>Name:{props.name}</ h2> 
+            <p>Age:{props.age}</p>
+            <p>{props.greeting}</p>
+            <div>{props.children}</div>
+        </>
+    )
+}
+```
+```
+### 2.
+
+function ProfileCard(props) {
+    const { name, age, greeting, children } = props;
+    return (
+        <>
+            <h2>Name:{name}</ h2> 
+            <p>Age:{age}</p>
+            <p>{greeting}</p>
+            <div>{children}</div>
+        </>
+    )
+}
+
+```
+
+```
+### 3
+
+function ProfileCard({ name, age, greeting, children }) {
+    return (
+        <>
+            <h2>Name:{name}</ h2> 
+            <p>Age:{age}</p>
+            <p>{greeting}</p>
+            <div>{children}</div>
+        </>
+    )
+}
+
+```
