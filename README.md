@@ -676,6 +676,6 @@ function ProfileCard({ name, age, greeting, children }) {
 
 - two bydefault CSS files 
 
-1. App.css ->
+1. App.css -> for the other style
 
-2. index.css -> 
+2. index.css -> for the basix style 

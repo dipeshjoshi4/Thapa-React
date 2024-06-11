@@ -1,11 +1,14 @@
 
 /* base rule */
 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Poppins";
 }
 
 html{
@@ -14,8 +17,8 @@ html{
 
 h1,h2,h3,h4,h5,h6{
   color:var(--heading-color);
-  font-family: "popins",sans-serif;
-  font-weight: 900;
+  font-family: "Poppins";
+  font-weight: 600;
 }
 
 h1{
@@ -27,7 +30,7 @@ p,li,a,label{
   letter-spacing: 0.1rem;
   color:var(--para-color);
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 li{
