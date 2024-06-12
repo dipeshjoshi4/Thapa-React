@@ -679,3 +679,48 @@ function ProfileCard({ name, age, greeting, children }) {
 1. App.css -> for the other style
 
 2. index.css -> for the basix style 
+## 17.  inline CSS Rules and different way to style
+
+- inline styles are applied  directly  to the HTML elements via the  style attribute.this approach uses javascript objects
+to define the css properties and values
+
+### 1 javascript Object Syntax
+
+- inline styles in react  are specified using javascript objects. properly names are  written in camelCase insted of the traditional CSS Kebab-case
+
+```
+const style = {
+  backgroundColor:"blue",
+  fontSize:"16px",  
+  };
+
+```
+### 2 Units:
+
+- for most numeric values, you need to specify units as  a string (e.g., '16px').
+- some properties like zindex can take  numeric values directly
+
+```
+const style = {
+  padding:"10px",
+  zIndex:1,
+};
+
+```
+
+### 3 Performance Considerations
+
+- Defining Inline CSS directly within JSX can lead to performance issues because  a new object is created on every render.
+- to avoid this ,define style outside of the render method or as constants.
+
+```
+const btnStyle = {
+      backgroundColor:'blue',
+      color:'white',
+};
+
+function MyButton(){
+  return <button style = {btnStyle}>Click Me</button>
+};
+
+```
