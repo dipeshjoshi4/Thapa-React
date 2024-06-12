@@ -6,9 +6,13 @@ export const SeriesCard = ({data}) => {
         padding: "1.2rem 2.4rem",
         border: "none",
         fontSize: "1.6rem",
-        backgroundColor: "var(--btn-hover-bg-color)",
-        color: "var(--bg-color)"
+        backgroundColor: `${rating >= 8.5 ? "#7dcea0" : "#f7dc6f"}`,
+        color: "var(--btn-color)",
+        fontWeight: "bold",
+        cursor:"pointer",
     }
+
+    const ratingClass = rating >= 8.5 ? "super_hit" : "average";
     
 
     return (
@@ -20,7 +24,7 @@ export const SeriesCard = ({data}) => {
             <div className="card-content">
                 <h2>Name:{name}</h2>
 
-                <h3 style={{fontSize:"1.5rem"}}>Rating:{rating}</h3>
+                <h3 style={{ fontSize: "1.5rem" }}>Rating: <span className={`rating ${ratingClass}`}>{rating}</span></h3>
                 <p>Summary:{description}</p>
                 <h4>Genre:{genre.join(" , ")}</h4>
                 <p>Cast:{cast.join(" , ")}</p>

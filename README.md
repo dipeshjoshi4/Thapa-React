@@ -724,3 +724,9 @@ function MyButton(){
 };
 
 ```
+
+### 19. Conditional Styling for Dynamic UIs in React.js 
+
+-  You Can Use  ternary Operators to add  conditional stylings to your CSS
+
+- if you are using INLINE_CSS > WITH object now  you have to do conditional CSS then you have to do ternary 
