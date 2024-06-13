@@ -732,3 +732,19 @@ function MyButton(){
 - if you are using INLINE_CSS > WITH object now  you have to do conditional CSS then you have to do ternary 
 
 ### 20. CSS Modules in React : Scopes and Reusable Styles
+
+- Every time you import a css file in your react component,they are regarded as global css
+- css modules help you keep styles specific to the component they are used in
+- each module encapsulates its styles,preventing unintended style conflicts with other modules.
+- the class names in css modules are often automatically genrating reducing the likelihood of naming clashes
+- (class value change possible and its unique)
+
+- CSS MODULES-RULES TO KEEP IN MIND
+
+- 1. Name your css module files with the .module.css or .module.scss extension
+- 2. import the css module file in your React Component.Access class names as properties of the imported styles object
+- every classname is treat like properties of style object
+- 3. Access class names as properties of the imported styles object
+- 4. combine multiple class names using template literals ot the class library
+- multiple classname combine you write then its in template literals means {` ..........`}
+- 5. Dynamically apply class names based on component state
