@@ -730,3 +730,5 @@ function MyButton(){
 -  You Can Use  ternary Operators to add  conditional stylings to your CSS
 
 - if you are using INLINE_CSS > WITH object now  you have to do conditional CSS then you have to do ternary 
+
+### 20. CSS Modules in React : Scopes and Reusable Styles
