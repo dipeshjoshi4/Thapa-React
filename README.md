@@ -748,3 +748,24 @@ function MyButton(){
 - 4. combine multiple class names using template literals ot the class library
 - multiple classname combine you write then its in template literals means {` ..........`}
 - 5. Dynamically apply class names based on component state
+
+### 21 import Style Component for styling Purpose
+
+- Link :
+``` 
+https://www.npmjs.com/package/styled-components
+
+``` 
+
+- in Terminal for install Style Component
+```
+npm i styled-components
+
+```
+
+- for import in any file we have to do this 
+
+```
+import styled from "styled-components";
+
+```
