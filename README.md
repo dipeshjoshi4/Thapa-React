@@ -769,3 +769,21 @@ npm i styled-components
 import styled from "styled-components";
 
 ```
+
+- 2 Ways to Write Style Component
+
+1. Using Template literals => const Button = styled.button `color:grey;`; 
+2. Using Style Objects => const Button = styled.button({color:grey;});
+
+1. Using Template literals => const Button = styled.button `color:grey;`; 
+
+- this is a styled component,which is a react component created using styled components
+- it is both a react component and a styled component.
+- As React component,it can be used  in jsx as a styled component,it has styles directly attached to it
+
+- styled is an object provided by the library and button is a method on that object (here styled.button => button is tagname)
+
+2. Using Style Objects => 
+const Button = styled.button({
+  color:grey,
+  });
