@@ -759,9 +759,11 @@ https://www.npmjs.com/package/styled-components
 
 - in Terminal for install Style Component
 ```
-npm i styled-components
+npm i styled-components // bun i styled-components
 
 ```
+
+- package.json in dependeci styled-component have seen after install
 
 - for import in any file we have to do this 
 
@@ -787,3 +789,96 @@ import styled from "styled-components";
 const Button = styled.button({
   color:grey,
   });
+
+### Normal Way(without Style Component)
+
+```
+  const btn_style = {
+         padding: "1.2rem 2.4rem",
+         border: "none",
+         fontSize: "1.6rem",
+         backgroundColor: `${rating >= 8.5 ? "#7dcea0" : "#f7dc6f"}`,
+         color: "var(--btn-color)",
+         fontWeight: "bold",
+         cursor:"pointer",
+     }
+  <button style={btn_style}>Watch Now</button> 
+
+```
+
+### with style component of Object Method 
+
+- so its make your style component name and your jsx tag name is same and both are same compon with this
+
+- and here we saw a object so we have to write css like we in object ` key : "value", ` format
+
+```
+    const ButtonDj = styled.button({
+        padding: "1.2rem 2.4rem",
+        border: "none",
+        fontSize: "1.6rem",
+        backgroundColor: `${rating >= 8.5 ? "#7dcea0" : "#f7dc6f"}`,
+        color: "var(--btn-color)",
+        fontWeight: "bold",
+        cursor: "pointer",
+    });
+
+<ButtonDj>Watch Now</ButtonDj>
+
+```
+
+
+### with style component of Template Literals Method 
+
+- and here we saw a template literals so we have to write css like Pure CSS ` property : value;` format
+
+```
+    const ButtonDj = styled.button`
+        padding: 1.2rem 2.4rem;
+        border: none;
+        font-size: 1.6rem;
+        background-color: `${rating >= 8.5 ? "#7dcea0" : "#f7dc6f"}`;
+        color: var(--btn-color);
+        font-weight: bold;
+        cursor: pointer;
+    `;
+
+<ButtonDj rating={rating}>Watch Now</ButtonDj>
+
+```
+
+- in pure css we dont use ternary operator so we have solution for that which is given by styled component
+
+background-color: `${rating >= 8.5 ? "#7dcea0" : "#f7dc6f"}`;
+
+- in styled-component, you can pass  a function  within the  trmplate literal to  dynamically  set CSS properties based on props or state
+
+- background-color: ${(props) => props.rating >= 8.5 ? "#7dcea0" : "#f7dc6f"};
+
+## one more example
+
+### Normal
+
+```
+const ratingClass = rating >= 8.5 ? styles.super_hit : styles.average;
+
+<h3 style={{ fontSize: "1.5rem" }}>Rating: <span className={`${styles.rating} ${ratingClass}`}>{rating}</span></h3>
+
+```
+### with style component of Template Literals Method 
+
+```
+const Rating = styled.h3`
+font-size:1.6rem;
+color:#7dcea0;
+text-transform:captilize;
+`;
+
+<Rating style={{ fontSize: "1.5rem" }}>Rating: <span className={`${styles.rating} ${ratingClass}`}>{rating}</span></Rating>
+
+
+```
+
+- 
+
+
