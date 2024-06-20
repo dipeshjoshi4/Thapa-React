@@ -881,6 +881,44 @@ text-transform:captilize;
 
 ### 22. Tailwind css in  reactv19
 
+### 23. Event Handling in React
+
+- Event handling in React is the process of capturing and responding to user interactions,such as Clicks,keystrokes or form submission within React application
+
+- Event handling in React follows a similar pattern to standard JS event handling but with some  key difference 
+
+- such as using synthetic event for cross-browser compatibility and providing consistent event handlinhg across different
+ elements and browsers
+
+- What is SyntheticBaseEvent in React ?
+
+- when you handle  events like react  like clicking a button or typing in an input box, react native browser events in 
+something called a SyntheticEvent.
+
+- This SyntheticEvent is one type of wrapper around the browser's native event making sure that events behave consistent
+ across different browsers
+
+ 1. onClick
+ 2. onChnage
+ 3. onSubmit
+ 4. onMouseEnter
+ 5. onMouseleave
+ 6. onKeyDown
+ 7. onkEyUp
+ 8. onFocus
+ 9. onBlur : Triggered when element loses focus
+ 10. onInput : triggered when the value of an input element is chnaged
 
 
+- Event Naming Conventions
 
+- Event Names in jsx write camelCase - onClick,onSubmit,onChange
+- Prefix : on -> onClick,onMouseEnter
+
+- Function Naming Conventions
+
+- Prefix with 'handle' : its a common conventions to prefix event handler functions with "handle" to clerly indicate their purpose
+- for Example: handleClick, handleChange,handleSubmit
+
+- Descriptive Names : function name should be descriptive and reflect what the function does
+- for Example : handleFormSubmit insted justHandleSubmit -> it mention specifically for form submission
