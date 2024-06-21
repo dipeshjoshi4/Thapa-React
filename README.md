@@ -926,3 +926,13 @@ something called a SyntheticEvent.
 ### 24. passing event handlers as props
 
 //ts:01:08
+
+- passing event handlers as props in react.js is a common  pattern used to allow child  components to communicate with parent  components. this pattern is usefulll in  various scenairous including
+
+- form handling :  passing event  handlers  like onChnage or onSubmit  to form components allow the child  components to update form data and notify the parent components of chnages
+
+- User Interaction : event handlers like onClickbe passed to interactive elements.tiggering such modal
+
+- State Management :Event handlers can be used to update state in the parent componenets.which can be passed down to child components as props to reflect the updated state
+
+- Callback Function : Event handlers can be used as callback function to habdle asynchronous operation or to update state based on the result of an operation
