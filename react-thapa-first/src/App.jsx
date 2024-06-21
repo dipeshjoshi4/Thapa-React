@@ -4,13 +4,15 @@
 // import "./components/Netflix.css"
 // import "./components/Netflix.module.css";
 
-import { EventHandling } from "./components/EventHandling";
+// import { EventHandling } from "./components/EventHandling";
+import { EventProps } from "./components/EventProps";
 
 
 export const App = () => {
   return (
     <section className="container">
-      <EventHandling />
+      <EventProps/>
+      {/* <EventHandling /> */}
       {/* <h1 className="card-heading">List Of Best Netflix Series</h1> */}
       {/* <NetflixSeries /> */}
       {/* <Profile/> */}

@@ -922,3 +922,7 @@ something called a SyntheticEvent.
 
 - Descriptive Names : function name should be descriptive and reflect what the function does
 - for Example : handleFormSubmit insted justHandleSubmit -> it mention specifically for form submission
+
+### 24. passing event handlers as props
+
+//ts:01:08
