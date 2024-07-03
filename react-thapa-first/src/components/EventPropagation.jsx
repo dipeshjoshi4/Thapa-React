@@ -1,6 +1,7 @@
 import "./EV.css";
 
 export const EventPropagation = () => {
+
     const handleGrandParent = () => {
         console.log("GrandParent clicked");
     };
@@ -10,11 +11,13 @@ export const EventPropagation = () => {
     };
 
     const handleChildClick = (event) => {
-        console.log(event);
-        event.stopPropagation();
+        console.log(event); //synthasis event
+        // event.stopPropagation();
         console.log("Child clicked");
     };
+
     return (
+
         <section className="main-div">
             <div className="g-div" onClickCapture={handleGrandParent}>
                 <div className="p-div" onClickCapture={handleParentClick}>
@@ -24,5 +27,6 @@ export const EventPropagation = () => {
                 </div>
             </div>
         </section>
+
     );
 };

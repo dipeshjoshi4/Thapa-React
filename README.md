@@ -946,16 +946,68 @@ something called a SyntheticEvent.
 
 - Bubbling Phase: the event start from  the target element bubbles up to the root of the DOM
 
-- IN REACT EVENT PROPAGATION
+### IN REACT EVENT PROPAGATION
 
 - in react.js event propagation refers to the process by which events propagate or "bubble" up from  the target element through
- its parent element in the DOM hierarchy.React follows  the same event propagation model as regular JS DOM events
+ its parent element in the DOM hierarchy.
+ 
+- React follows  the same event propagation model as regular JS DOM events
 
  - When an event occurs on an element in a react component, such  as a button click the  event is first captured at the target
- element and then bubbles up through the parent elements triggering any event handlers that have been defined along the way.this allows you to handle events at different levels of the componenet hierarchy
+ element and then bubbles up through the parent elements triggering any event handlers that have been defined along the way.
+ - this allows you to handle events at different levels of the componenet hierarchy
 
  - React Provides a way to stop  event propagation using the `event.stopPropagation();` which can be called on the event 
  object within an event handler. this means the event from bubbling up further in the DOM,ensuring the only the target elemnts is triggered
 `
+- for capturing Phase means when You Click Child -> grandparent -> parent -> child 
+
+```
+- use onClick or any Event with postfix => Capture 
+
+```
+
+```
+<section className="main-div">
+      <div className="g-div" onClickCapture={handleGrandParent}>
+            <div className="p-div" onClickCapture={handleParentClick}>
+                  <button className="c-div" onClickCapture={handleChildClick}>
+                      Child Div
+                  </button>
+            </div>
+      </div>
+</section>
+
+```
+
+- for the child click and get only child date for that you have to use this
+````
+   event.stopPropagation();
+
+````
+- Example
+
+````
+    const handleChildClick = (event) => {
+        console.log(event); //synthasis event
+         event.stopPropagation();
+        console.log("Child clicked");
+    };
+
+    return (
+
+        <section className="main-div">
+            <div className="g-div" onClickCapture={handleGrandParent}>
+                <div className="p-div" onClickCapture={handleParentClick}>
+                    <button className="c-div" onClickCapture={handleChildClick}>
+                        Child Div
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    );
+
+````
 
 ### 26. React States:
