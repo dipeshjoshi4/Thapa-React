@@ -925,8 +925,6 @@ something called a SyntheticEvent.
 
 ### 24. passing event handlers as props
 
-//ts:01:08
-
 - passing event handlers as props in react.js is a common  pattern used to allow child  components to communicate with parent  components. this pattern is usefulll in  various scenairous including
 
 - form handling :  passing event  handlers  like onChnage or onSubmit  to form components allow the child  components to update form data and notify the parent components of chnages
@@ -936,3 +934,28 @@ something called a SyntheticEvent.
 - State Management :Event handlers can be used to update state in the parent componenets.which can be passed down to child components as props to reflect the updated state
 
 - Callback Function : Event handlers can be used as callback function to habdle asynchronous operation or to update state based on the result of an operation
+
+### 25. Event Propagation in React: Capturing, Bubbling,
+
+- Event Propagation refers to  the process of how events propagate or travel the DOM(Document Object Model) hierarchy.
+- in javascript there are two phases of event propagate capturing phase  and bubbling phase
+
+- Capturing Phase : the event start from the root of the DOM  and goes  down to the  target element
+
+- Target Phase :  the event  reaches the target element
+
+- Bubbling Phase: the event start from  the target element bubbles up to the root of the DOM
+
+- IN REACT EVENT PROPAGATION
+
+- in react.js event propagation refers to the process by which events propagate or "bubble" up from  the target element through
+ its parent element in the DOM hierarchy.React follows  the same event propagation model as regular JS DOM events
+
+ - When an event occurs on an element in a react component, such  as a button click the  event is first captured at the target
+ element and then bubbles up through the parent elements triggering any event handlers that have been defined along the way.this allows you to handle events at different levels of the componenet hierarchy
+
+ - React Provides a way to stop  event propagation using the `event.stopPropagation();` which can be called on the event 
+ object within an event handler. this means the event from bubbling up further in the DOM,ensuring the only the target elemnts is triggered
+`
+
+### 26. React States:
