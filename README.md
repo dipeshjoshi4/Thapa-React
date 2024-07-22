@@ -1018,7 +1018,7 @@ something called a SyntheticEvent.
 - keeping the userinterface in sync with the data
 - state is dynamic and mutable meaning it can chnage over time usually in response to user actions,server responses or other event
 
-### why React
+### why React use state
 
 - It's because those are normal variables and React.js doesn't know that it's going to be changed.
 - And that react should respond or update DOM based on that.
@@ -1027,3 +1027,86 @@ something called a SyntheticEvent.
 - This type of function which starts with "use" is called hook.
 - This is a special function which has some features provided by react.js
 - we will learn about other hooks in future.
+
+### syntax of hooks
+
+const [count,setCount] = useState(0)
+
+- const -> Variable(key)
+- state Variable -> thye current state value
+- setCount -> a function that updates the state variable
+- useState(0) -> the intial value of the state
+
+- so intial state count  is intial value is useState(0)
+- for the future update count value change we have to playe with setCount function
+
+```
+import { useState } from "react";
+
+export const State = () => {
+
+    //! it will not work
+
+    // let value = 0;
+    // const handleButtonClick = () => {
+    //     value++;
+    //     console.log(value)
+    // }
+
+    // const array = useState();
+    // console.log(array);
+    //! its gives array with 2 element 1st is undefiend(state variable) and 2nd is function(updated)
+
+    const [count, setCount] = useState(0)
+    const handleButtonClick = () => {
+        setCount(()=>count+1)
+    }
+
+    return (
+        <>
+            <section className="main-div">
+                <h1>{count}</h1>
+                <button onClick={handleButtonClick} >Increment</button>
+            </section>
+        </>
+    )
+}
+
+```
+
+```
+import { useState } from "react";
+
+export const State = () => {
+
+    const [count, setCount] = useState(0)
+    const handleButtonClick = () => {
+        setCount(()=>count+1)
+    }
+
+    return (
+        <>
+            <section className="main-div">
+                <h1>{count}</h1>
+                <button onClick={handleButtonClick} >Increment</button>
+            </section>
+        </>
+    )
+
+  ```
+
+  ### Why We Need State In React?
+
+  - 1.Dynamic UI Updates:
+
+  - State allows your Components to update Dynamically in response to user input or other event . for Ex: in a form  the state
+    might hold the current value of the input fileds,updating in real-time as the user types.
+
+  - 2.Interactivity:
+
+  - state makes your app interactive.By Maintaining state you can create components that respond to user actions,such as clicks
+    form submissions or keyboard units
+
+  - 3. Data Management:
+
+  - state helps manage data within a component.for instance you can 
