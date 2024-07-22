@@ -1011,3 +1011,19 @@ something called a SyntheticEvent.
 ````
 
 ### 26. React States:
+
+- in react ,state  refers  to an object that holds data  or information about the componenet
+- state is managed within the component(just like variable declaration in function)
+- however  unlike regular variables when state chnages react re-renders the componenet to reflect these chnages
+- keeping the userinterface in sync with the data
+- state is dynamic and mutable meaning it can chnage over time usually in response to user actions,server responses or other event
+
+### why React
+
+- It's because those are normal variables and React.js doesn't know that it's going to be changed.
+- And that react should respond or update DOM based on that.
+- Those values are already rendered on DOM, there is no way they will be re-rendered.
+- For that React.js provides a function called "useState"
+- This type of function which starts with "use" is called hook.
+- This is a special function which has some features provided by react.js
+- we will learn about other hooks in future.
