@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export const State = () => {
 
-    //it will not work
+    //it will not work so i committed normal way chnage
     // let value = 0;
     // const handleButtonClick = () => {
     //     value++;
